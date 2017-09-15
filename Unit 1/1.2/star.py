@@ -1,4 +1,5 @@
 import turtle
+wn = turtle.Screen()
 
 def draw_line(angle):
     mike = turtle.Turtle()
@@ -34,4 +35,6 @@ def square(lines):
     for angle in range(0, 180, int(180/lines)):
         draw_line(angle)
         
-square(10)
+square(5)
+
+wn.exitonclick()
